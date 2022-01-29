@@ -31,10 +31,22 @@
         <main>
             <section>
                 <h1>Responsive images</h1>
-                <p>Treść pierwszego paragrafu</p>
-                <img src="img/img01.jpg" alt="img01">
-                <p>Treść drugiego paragrafu</p>
-                <img src="img/img02.jpg" alt="img02">
+                <p>To jest moja klawiatura</p>
+                    <img
+                        srcset="img/keyboard-400w.jpg 400w, 
+                                img/keyboard-800w.jpg 800w" 
+                        sizes="(max-width:600px) 400px, 
+                               800px"         
+                        src="img/keyboard-800w.jpg" 
+                        alt="Klawiatura">
+                <p>A to jest moja myszka</p>
+                    <img 
+                        srcset="img/mouse-400w.jpg 400w, 
+                                img/mouse-800w.jpg 800w" 
+                        sizes="(max-width:600px) 400px, 
+                               800px"         
+                        src="img/mouse-800w.jpg" 
+                        alt="Myszka.">
             </section>
         </main>
     </body>
